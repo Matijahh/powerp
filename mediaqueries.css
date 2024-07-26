@@ -6,16 +6,23 @@
     width: 450px;
   }
 
-  .hero-text .title {
+  .hero-text .title,
+  .erp-section .title {
     font-size: 55px;
   }
 
-  .hero-text p {
+  .hero-text,
+  .erp-info p {
     max-width: 450px;
   }
 
   .hero-image img {
     width: 450px;
+  }
+
+  .erp-image img {
+    width: 350px;
+    margin-right: 150px;
   }
 
   .hero-line {
@@ -48,16 +55,23 @@
     width: 350px;
   }
 
-  .hero-text .title {
+  .hero-text .title,
+  .erp-info .title {
     font-size: 35px;
   }
 
-  .hero-text p {
+  .hero-text p,
+  .erp-info p {
     max-width: 350px;
   }
 
   .hero-image img {
     width: 350px;
+  }
+
+  .erp-image img {
+    width: 300px;
+    margin-right: 100px;
   }
 
   .hero-line img {
@@ -84,7 +98,9 @@
     margin-left: auto;
   }
 
-  .hero-section {
+  .hero-section,
+  .erp-section,
+  .divider {
     display: none;
   }
 }
