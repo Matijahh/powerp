@@ -10,6 +10,8 @@
   --btn-bg-color: #ff7f5c;
   --btn-bg-color-hover: #dc6848;
   --section-title-color: #4d4d4d;
+  --text-color: #717171;
+  --section-dark-bg-color: #1a1a1a;
 }
 
 /* >> Custom Fonts << */
@@ -48,6 +50,7 @@ p {
   font-family: "PageFont";
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 /* >>> Transition Styling <<<*/
@@ -305,6 +308,7 @@ nav {
 .hero-text p {
   margin: 30px 0 0 0;
   width: 100%;
+  font-size: 16px;
   max-width: 550px;
 }
 
@@ -348,6 +352,7 @@ nav {
 }
 
 /* >>> ERP Section Styling <<< */
+
 .erp-section {
   display: flex;
   justify-content: center;
@@ -357,6 +362,7 @@ nav {
 
 .erp-content {
   display: flex;
+  align-items: center;
 }
 
 .erp-info .title {
@@ -372,4 +378,56 @@ nav {
 .erp-info p {
   max-width: 550px;
   margin-bottom: 70px;
+  color: var(--text-color);
+}
+
+/* >>> Power Platform Section Styling <<< */
+
+.pwr-platform-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px 90px 20px;
+  background-color: var(--section-dark-bg-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.pwr-platform-bg-circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.pwr-platform-bg-circle img {
+  height: 1200px;
+}
+
+.pwr-platform-content {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.pwr-platform-info .title {
+  margin-bottom: 80px;
+  max-width: 400px;
+  color: #ffffff;
+}
+
+.pwr-platform-info .title span {
+  color: var(--primary-color);
+}
+
+.pwr-platform-image img {
+  width: 480px;
+  margin-left: 240px;
+}
+
+.pwr-platform-info p {
+  max-width: 660px;
+  margin-bottom: 60px;
+  color: var(--text-color-white);
 }

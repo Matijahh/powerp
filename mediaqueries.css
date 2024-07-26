@@ -7,22 +7,19 @@
   }
 
   .hero-text .title,
-  .erp-section .title {
+  .erp-section .title,
+  .pwr-platform-section .title {
     font-size: 55px;
   }
 
   .hero-text,
-  .erp-info p {
+  .erp-info p,
+  .pwr-platform-info p {
     max-width: 450px;
   }
 
   .hero-image img {
     width: 450px;
-  }
-
-  .erp-image img {
-    width: 350px;
-    margin-right: 150px;
   }
 
   .hero-line {
@@ -31,6 +28,20 @@
 
   .hero-line img {
     width: 450px;
+  }
+
+  .erp-image img {
+    width: 350px;
+    margin-right: 150px;
+  }
+
+  .pwr-platform-image img {
+    width: 360px;
+    margin-left: 150px;
+  }
+
+  .pwr-platform-bg-circle img {
+    height: 900px;
   }
 }
 
@@ -56,12 +67,15 @@
   }
 
   .hero-text .title,
-  .erp-info .title {
+  .erp-info .title,
+  .pwr-platform-info .title {
     font-size: 35px;
   }
 
   .hero-text p,
-  .erp-info p {
+  .erp-info p,
+  .pwr-platform-info p {
+    font-size: 14px;
     max-width: 350px;
   }
 
@@ -72,6 +86,15 @@
   .erp-image img {
     width: 300px;
     margin-right: 100px;
+  }
+
+  .pwr-platform-image img {
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  .pwr-platform-bg-circle img {
+    height: 700px;
   }
 
   .hero-line img {
@@ -100,6 +123,7 @@
 
   .hero-section,
   .erp-section,
+  .pwr-platform-section,
   .divider {
     display: none;
   }
