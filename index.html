@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="desktop-nav">
+      <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
+      <div class="links">
+        <ul class="nav-links">
+          <li><a href="#" class="active">početna</a></li>
+          <li><a href="#">proizvodi/usluge</a></li>
+          <li><a href="#">custom rešenja</a></li>
+          <li><a href="#">reference</a></li>
+        </ul>
+        <ul class="language-links">
+          <li><a href="#" class="active">sr</a></li>
+          <li><a href="#">en</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="hamburger-nav">
+      <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul class="language-links">
+            <li><a href="#" class="active">sr</a></li>
+            <li><a href="#">en</a></li>
+          </ul>
+          <div class="logo">
+            <img src="assets/images/logo.svg" alt="Logo" />
+          </div>
+          <li>
+            <a href="#" class="active" onclick="toggleMenu()">šta radimo</a>
+          </li>
+          <li><a href="#" onclick="toggleMenu()">o nama</a></li>
+          <li><a href="#" onclick="toggleMenu()">šta nudimo</a></li>
+          <li><a href="#" onclick="toggleMenu()">kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>

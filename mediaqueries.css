@@ -1,0 +1,35 @@
+/* >>> SMALL LAPTOP SCREEN SIZE: 1024px <<< */
+/* >>> TABLET SCREEN SIZE: 769px <<< */
+
+@media screen and (max-width: 1024px) {
+  .nav-links,
+  .language-links {
+    font-size: 12px;
+  }
+
+  .language-links {
+    margin-left: 5rem;
+  }
+
+  .hamburger-menu .menu-links .language-links {
+    margin-left: auto;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger-nav {
+    display: flex;
+  }
+
+  .hamburger-nav .logo img {
+    height: 30px;
+  }
+}
