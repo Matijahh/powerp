@@ -1,5 +1,33 @@
+/* >>> CUSTOM QUERIES <<< */
+
+@media screen and (max-width: 1400px) {
+  .hero-text {
+    margin-right: 8rem;
+    width: 450px;
+  }
+
+  .hero-text .title {
+    font-size: 55px;
+  }
+
+  .hero-text p {
+    max-width: 450px;
+  }
+
+  .hero-image img {
+    width: 450px;
+  }
+
+  .hero-line {
+    bottom: -7rem;
+  }
+
+  .hero-line img {
+    width: 450px;
+  }
+}
+
 /* >>> SMALL LAPTOP SCREEN SIZE: 1024px <<< */
-/* >>> TABLET SCREEN SIZE: 769px <<< */
 
 @media screen and (max-width: 1024px) {
   .nav-links,
@@ -11,14 +39,33 @@
     margin-left: 5rem;
   }
 
-  .hamburger-menu .menu-links .language-links {
-    margin-left: auto;
-  }
-
   .logo img {
     height: 50px;
   }
+
+  .hero-text {
+    margin-right: 2rem;
+    width: 350px;
+  }
+
+  .hero-text .title {
+    font-size: 35px;
+  }
+
+  .hero-text p {
+    max-width: 350px;
+  }
+
+  .hero-image img {
+    width: 350px;
+  }
+
+  .hero-line img {
+    width: 300px;
+  }
 }
+
+/* >>> TABLET SCREEN SIZE: 769px <<< */
 
 @media screen and (max-width: 769px) {
   .desktop-nav {
@@ -31,5 +78,13 @@
 
   .hamburger-nav .logo img {
     height: 30px;
+  }
+
+  .hamburger-menu .menu-links .language-links {
+    margin-left: auto;
+  }
+
+  .hero-section {
+    display: none;
   }
 }

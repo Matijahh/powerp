@@ -5,14 +5,24 @@
 :root {
   --nav-bg-color: #263238;
   --text-color-white: #eeeeee;
-  --mobile-bg-color: #00a9bd;
+  --primary-color: #00a9bd;
 }
 
 /* >> Custom Fonts << */
 
 @font-face {
   font-family: "NavbarFont";
-  src: url("./assets/fonts/avenir.ttf"); /*URL to font*/
+  src: url("./assets/fonts/avenir.ttf");
+}
+
+@font-face {
+  font-family: "PageFontBold";
+  src: url("./assets/fonts/inter-bold.otf");
+}
+
+@font-face {
+  font-family: "PageFont";
+  src: url("./assets/fonts/inter-regular.otf");
 }
 
 * {
@@ -184,7 +194,7 @@ nav {
   top: 100%;
   width: 100%;
   height: calc(100vh - 108px);
-  background-color: var(--mobile-bg-color);
+  background-color: var(--primary-color);
   left: 0;
   max-height: 0;
   overflow: hidden;
@@ -230,4 +240,61 @@ nav {
 
 .hamburger-menu .menu-links.open {
   max-height: calc(100vh - 108px);
+}
+
+/* >> Hero Section Styling << */
+
+.hero-section {
+  width: 100%;
+  height: 672px;
+  background-image: url("./assets/images/hero-bg.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  position: relative;
+}
+
+.hero-image img {
+  width: 520px;
+}
+
+.hero-line {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hero-line img {
+  width: 500px;
+}
+
+.hero-text {
+  font-size: 16px;
+  font-family: "PageFont";
+  width: 710px;
+  color: var(--text-color-white);
+  margin-top: 3rem;
+  margin-right: 10rem;
+}
+
+.hero-text .title {
+  font-size: 64px;
+  font-family: "PageFontBold";
+}
+
+.hero-text p {
+  margin: 30px 0 0 0;
+  padding: 0;
+  width: 100%;
+  max-width: 550px;
+}
+
+.hero-text .title span {
+  color: var(--primary-color);
 }
