@@ -510,3 +510,56 @@ nav {
   max-width: 630px;
   margin-left: 160px;
 }
+
+/* >>> Team Section Styling <<< */
+
+.team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.team-content .title {
+  margin-bottom: 120px;
+}
+
+.team-content .title span {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-family: "PageFontExtraBold";
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team-container .team-item img {
+  width: 340px;
+}
+
+.team-container .team-item p {
+  margin-top: 30px;
+  font-size: 26px;
+  font-family: "PageFontExtraBold";
+}
+
+.team-container .team-item p .item-blue {
+  color: var(--primary-color);
+}
+
+.team-container .team-item p .item-gray {
+  font-size: 18px;
+  font-family: "PageFont";
+  color: var(--text-color);
+}

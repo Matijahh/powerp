@@ -6,6 +6,16 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .team-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-container .team-item img {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .hero-text {
     margin-right: 8rem;
@@ -140,6 +150,10 @@
     margin-right: 0;
     margin-bottom: 100px;
   }
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* >>> TABLET SCREEN SIZE: 769px <<< */
@@ -165,6 +179,7 @@
   .erp-section,
   .pwr-platform-section,
   .about-us-section,
+  .team-section,
   .divider {
     display: none;
   }
