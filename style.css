@@ -12,6 +12,7 @@
   --section-title-color: #4d4d4d;
   --text-color: #717171;
   --section-dark-bg-color: #1a1a1a;
+  --copyright-bg-color: #161d21;
 }
 
 /* >> Custom Fonts << */
@@ -77,6 +78,8 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  z-index: 5;
   font-family: "NavbarFont";
   width: 100%;
   background-color: var(--nav-bg-color);
@@ -273,6 +276,7 @@ nav {
 /* >> Hero Section Styling << */
 
 .hero-section {
+  padding-top: 108px;
   width: 100%;
   height: 672px;
   background-image: url("./assets/images/hero-bg.png");
@@ -562,4 +566,89 @@ nav {
   font-size: 18px;
   font-family: "PageFont";
   color: var(--text-color);
+}
+
+/* >>> Copyright Footer Styling <<< */
+
+.copyright-container {
+  width: 100%;
+  height: 80px;
+  background-color: var(--copyright-bg-color);
+  color: white;
+  display: flex;
+  font-family: "PageFont";
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright-container span:first-child {
+  margin-left: 60px;
+}
+
+.copyright-container .right-part {
+  margin-right: 60px;
+}
+
+.copyright-container .right-part span:first-child {
+  margin-right: 30px;
+}
+
+.copyright-container span {
+  text-transform: uppercase;
+}
+
+/* >>> Contact Footer Styling <<< */
+
+.contact-info-container {
+  width: 100%;
+  height: 170px;
+  background-color: var(--nav-bg-color);
+  color: white;
+  display: flex;
+  font-family: "PageFont";
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info-container .logo {
+  margin-left: 60px;
+}
+
+.contact-info-container .logo img {
+  width: 135px;
+}
+
+.contact-info-container .contact-container,
+.contact-info-container .contact-container .contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-container .contact-container .contact-item img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.contact-info-container .contact-container .contact-item:first-child {
+  margin-right: 50px;
+}
+
+.contact-info-container .contact-nav {
+  margin-right: 60px;
+  list-style: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contact-info-container .contact-nav li {
+  margin-bottom: 20px;
+}
+
+.contact-info-container .contact-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info-container .contact-nav a {
+  text-decoration: none;
+  color: white;
 }

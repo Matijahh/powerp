@@ -108,8 +108,18 @@
   }
 
   .about-us-section .paragraph-container p,
-  .about-us-section .second-paragraph-container p {
+  .about-us-section .second-paragraph-container p,
+  .contact-info-container .contact-container span,
+  .contact-info-container .contact-nav a {
     font-size: 14px;
+  }
+
+  .contact-info-container .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info-container .contact-container .contact-item:first-child {
+    margin-right: 20px;
   }
 
   .about-us-section .second-paragraph-container p {
@@ -180,6 +190,8 @@
   .pwr-platform-section,
   .about-us-section,
   .team-section,
+  .contact-info-container,
+  .copyright-container,
   .divider {
     display: none;
   }
