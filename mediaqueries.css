@@ -1,5 +1,11 @@
 /* >>> CUSTOM QUERIES <<< */
 
+@media screen and (max-width: 1700px) {
+  .about-us-section .paragraph-container:first-child {
+    margin-right: 200px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .hero-text {
     margin-right: 8rem;
@@ -43,6 +49,14 @@
   .pwr-platform-bg-circle img {
     height: 900px;
   }
+
+  .about-us-content {
+    width: 80%;
+  }
+
+  .about-us-section .paragraph-container:first-child {
+    margin-right: 100px;
+  }
 }
 
 /* >>> SMALL LAPTOP SCREEN SIZE: 1024px <<< */
@@ -79,6 +93,19 @@
     max-width: 350px;
   }
 
+  .about-us-info {
+    font-size: 16px;
+  }
+
+  .about-us-section .paragraph-container p,
+  .about-us-section .second-paragraph-container p {
+    font-size: 14px;
+  }
+
+  .about-us-section .second-paragraph-container p {
+    margin-left: 100px;
+  }
+
   .hero-image img {
     width: 350px;
   }
@@ -99,6 +126,19 @@
 
   .hero-line img {
     width: 300px;
+  }
+
+  .about-us-section .first-paragraph-container {
+    flex-direction: column;
+  }
+
+  .about-us-section .second-paragraph-container img {
+    width: 300px;
+  }
+
+  .about-us-section .paragraph-container:first-child {
+    margin-right: 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -124,6 +164,7 @@
   .hero-section,
   .erp-section,
   .pwr-platform-section,
+  .about-us-section,
   .divider {
     display: none;
   }
