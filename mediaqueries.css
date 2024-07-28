@@ -4,6 +4,10 @@
   .about-us-section .paragraph-container:first-child {
     margin-right: 200px;
   }
+
+  .map-container img {
+    width: 840px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -66,6 +70,18 @@
 
   .about-us-section .paragraph-container:first-child {
     margin-right: 100px;
+  }
+
+  .map-container img {
+    width: 620px;
+  }
+
+  .map-section .form-container .btn {
+    margin-top: 20px;
+  }
+
+  .input-style {
+    width: 170px;
   }
 }
 
@@ -164,6 +180,39 @@
   .team-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .map-container img {
+    width: 520px;
+  }
+
+  .map-section .form-container {
+    margin-top: 20px;
+  }
+
+  .map-section .form-container .first-row,
+  .map-section .form-container .second-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-section .form-container .first-row .input-style:first-child,
+  .map-section .form-container .second-row .input-style:first-child {
+    margin-bottom: 18px;
+  }
+
+  .map-section .form-container .btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    float: initial;
+  }
+
+  .input-style {
+    width: 200px !important;
+  }
+
+  .map-section .form-container textarea {
+    width: 200px !important;
+  }
 }
 
 /* >>> TABLET SCREEN SIZE: 769px <<< */
@@ -192,6 +241,7 @@
   .team-section,
   .contact-info-container,
   .copyright-container,
+  .map-section,
   .divider {
     display: none;
   }

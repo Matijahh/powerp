@@ -6,6 +6,7 @@
   --nav-bg-color: #263238;
   --text-color-white: #eeeeee;
   --primary-color: #00a9bd;
+  --primary-hover-color: #0e8390;
   --body-color: #e3e3e3;
   --btn-bg-color: #ff7f5c;
   --btn-bg-color-hover: #dc6848;
@@ -57,6 +58,27 @@ p {
   margin: 0;
   padding: 0;
   font-size: 18px;
+}
+
+.input-style {
+  border: none;
+  font-family: "PageFont";
+  border-bottom: 1px solid black;
+  background: transparent;
+  padding: 5px 0;
+  width: 250px;
+}
+
+.input-style:focus,
+.input-style:focus-visible {
+  outline: none;
+}
+
+.input-style::placeholder {
+  color: black;
+  font-family: "PageFont";
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
 /* >>> Transition Styling <<<*/
@@ -566,6 +588,137 @@ nav {
   font-size: 18px;
   font-family: "PageFont";
   color: var(--text-color);
+}
+
+/* >>> Partners Section Styling <<< */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.partners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
+
+.partners-content .title {
+  font-size: 44px;
+  margin-bottom: 110px;
+  margin-left: 120px;
+}
+
+.partners-content .title span {
+  font-family: "PageFontExtraBold";
+  color: var(--primary-color);
+}
+
+.partners-container {
+  background-color: black;
+  padding: 50px 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.partners-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), black);
+}
+
+.partners-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+}
+
+.partners-container:hover .partners-slide {
+  animation-play-state: paused;
+}
+
+.partners-slide {
+  display: inline-block;
+  animation: 45s slide infinite linear;
+}
+
+.partners-slide img {
+  height: 80px;
+  margin: 0 120px;
+}
+
+/* >>> Map Section Styling <<< */
+
+.map-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.map-container img {
+  width: 1070px;
+}
+
+.map-section .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.map-section .form-container .first-row,
+.map-section .form-container .second-row {
+  margin-bottom: 18px;
+}
+
+.map-section .form-container .first-row .input-style:first-child,
+.map-section .form-container .second-row .input-style:first-child {
+  margin-right: 40px;
+}
+
+.map-section .form-container textarea {
+  width: 100% !important;
+  border-color: var(--primary-color);
+}
+
+.map-section .form-container textarea::placeholder {
+  color: var(--primary-color);
+}
+
+.map-section .form-container .btn {
+  background-color: var(--primary-color);
+  float: right;
+  margin-top: 70px;
+}
+
+.map-section .form-container .btn:hover {
+  background-color: var(--primary-hover-color);
 }
 
 /* >>> Copyright Footer Styling <<< */
