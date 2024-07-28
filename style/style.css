@@ -1,0 +1,259 @@
+/* >> Hero Section Styling << */
+
+.hero-section {
+  padding-top: 108px;
+  width: 100%;
+  height: 672px;
+  background-image: url("../assets/images/hero-bg.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  position: relative;
+}
+
+.hero-image img {
+  width: 520px;
+}
+
+.hero-line {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hero-line img {
+  width: 500px;
+}
+
+.hero-text {
+  font-size: 16px;
+  width: 710px;
+  color: var(--text-color-white);
+  margin-top: 3rem;
+  margin-right: 10rem;
+}
+
+.hero-text p {
+  margin: 30px 0 0 0;
+  width: 100%;
+  font-size: 16px;
+  max-width: 550px;
+}
+
+.hero-text .title span {
+  color: var(--primary-color);
+  font-family: "PageFontExtraBold";
+}
+
+/* >>> ERP Section Styling <<< */
+
+.erp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 90px 0;
+}
+
+.erp-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.erp-info .title {
+  margin-bottom: 55px;
+  color: var(--section-title-color);
+}
+
+.erp-image img {
+  width: 400px;
+  margin-right: 200px;
+}
+
+.erp-info p {
+  max-width: 550px;
+  margin-bottom: 70px;
+  color: var(--text-color);
+}
+
+/* >>> Power Platform Section Styling <<< */
+
+.pwr-platform-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 90px 0;
+  background-color: var(--section-dark-bg-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.pwr-platform-bg-circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.pwr-platform-bg-circle img {
+  height: 1200px;
+}
+
+.pwr-platform-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 80%;
+}
+
+.pwr-platform-info .title {
+  margin-bottom: 80px;
+  max-width: 400px;
+  color: #ffffff;
+}
+
+.pwr-platform-info .title span {
+  color: var(--primary-color);
+  font-family: "PageFontExtraBold";
+}
+
+.pwr-platform-image img {
+  width: 480px;
+  margin-left: 240px;
+}
+
+.pwr-platform-info p {
+  max-width: 660px;
+  margin-bottom: 60px;
+  color: var(--text-color-white);
+}
+
+/* >>> About Us Section Styling <<< */
+
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.about-us-content .title {
+  margin-bottom: 40px;
+}
+
+.about-us-content .title span {
+  color: var(--primary-color);
+  font-family: "PageFontExtraBold";
+}
+
+.about-us-content .about-us-info {
+  color: var(--text-color);
+  font-size: 20px;
+  max-width: 500px;
+  margin-bottom: 60px;
+}
+
+.about-us-section .first-paragraph-container,
+.about-us-section .paragraph-container,
+.about-us-section .second-paragraph-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-us-section .paragraph-container:first-child {
+  margin-right: 300px;
+}
+
+.about-us-section .paragraph-container img {
+  width: 125px;
+}
+
+.about-us-section .second-paragraph-container img {
+  width: 400px;
+}
+
+.about-us-section .paragraph-container p {
+  color: var(--text-color);
+  max-width: 400px;
+  margin-left: 30px;
+}
+
+.about-us-section .second-paragraph-container {
+  margin-top: 180px;
+  justify-content: space-around;
+}
+
+.about-us-section .second-paragraph-container p {
+  color: var(--text-color);
+  max-width: 630px;
+  margin-left: 160px;
+}
+
+/* >>> Team Section Styling <<< */
+
+.team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.team-content .title {
+  margin-bottom: 120px;
+}
+
+.team-content .title span {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-family: "PageFontExtraBold";
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team-container .team-item img {
+  width: 340px;
+}
+
+.team-container .team-item p {
+  margin-top: 30px;
+  font-size: 26px;
+  font-family: "PageFontExtraBold";
+}
+
+.team-container .team-item p .item-blue {
+  color: var(--primary-color);
+}
+
+.team-container .team-item p .item-gray {
+  font-size: 18px;
+  font-family: "PageFont";
+  color: var(--text-color);
+}

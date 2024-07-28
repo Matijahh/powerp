@@ -26,7 +26,13 @@
     width: 450px;
   }
 
+  .products-hero-text {
+    width: 450px;
+  }
+
   .hero-text .title,
+  .products-hero-text .title,
+  .custom-hero-text .title,
   .erp-section .title,
   .pwr-platform-section .title {
     font-size: 55px;
@@ -36,6 +42,31 @@
   .erp-info p,
   .pwr-platform-info p {
     max-width: 450px;
+  }
+
+  .products-hero-text,
+  .custom-hero-text {
+    max-width: 400px;
+  }
+
+  .custom-hero-section .text-right p {
+    width: 400px;
+    margin-top: 140px;
+    margin-left: 6rem;
+  }
+
+  .products-hero-image {
+    margin-left: 8rem;
+    width: 350px;
+  }
+
+  .products-hero-image img {
+    width: 350px;
+  }
+
+  .products-hero-image .circle {
+    width: 290px;
+    height: 290px;
   }
 
   .hero-image img {
@@ -106,13 +137,43 @@
     width: 350px;
   }
 
+  .products-hero-text,
+  .custom-hero-text {
+    width: 300px;
+  }
+
+  .custom-hero-section .text-right p {
+    width: 300px;
+    margin-top: 110px;
+    margin-left: 2rem;
+  }
+
+  .products-hero-image {
+    margin-left: 2rem;
+    width: 300px !important;
+  }
+
+  .products-hero-image img {
+    width: 300px !important;
+  }
+
+  .products-hero-image .circle {
+    width: 240px;
+    height: 240px;
+  }
+
   .hero-text .title,
+  .products-hero-text .title,
+  .custom-hero-text .title,
   .erp-info .title,
   .pwr-platform-info .title {
     font-size: 35px;
   }
 
   .hero-text p,
+  .products-hero-text p,
+  .custom-hero-text p,
+  .custom-hero-section .text-right p,
   .erp-info p,
   .pwr-platform-info p {
     font-size: 14px;
@@ -142,7 +203,8 @@
     margin-left: 100px;
   }
 
-  .hero-image img {
+  .hero-image img,
+  .products-hero-image img {
     width: 350px;
   }
 
@@ -235,12 +297,15 @@
   }
 
   .hero-section,
+  .products-hero-section,
+  .custom-hero-section,
   .erp-section,
   .pwr-platform-section,
   .about-us-section,
   .team-section,
   .contact-info-container,
   .copyright-container,
+  .partners-section,
   .map-section,
   .divider {
     display: none;
