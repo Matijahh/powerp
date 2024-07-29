@@ -45,3 +45,40 @@
   margin-top: 220px;
   margin-left: 10rem;
 }
+
+/* >>> Title Section Styling <<< */
+
+.custom-title-section {
+  height: 210px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.custom-title-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.custom-title-content h2 {
+  max-width: 850px;
+  font-size: 32px;
+  font-family: "PageFont";
+  color: white;
+  z-index: 2;
+}
+
+.custom-title-content img {
+  width: 1000px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: -50%;
+  transform: scale(-1, 1) rotate(90deg);
+}

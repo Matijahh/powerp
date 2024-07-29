@@ -1,7 +1,14 @@
 /* >>> CUSTOM QUERIES <<< */
 
 @media screen and (max-width: 1900px) {
-  .products-services-content {
+  .products-services-content,
+  .hero-section .hero-content,
+  .pwr-platform-section .pwr-platform-content,
+  .about-us-section .about-us-content,
+  .products-title-section .products-title-content,
+  .products-hero-section .products-hero-content,
+  .focus-section .focus-content,
+  .pros-section .pros-content {
     width: 80%;
   }
 }
@@ -25,6 +32,10 @@
     width: 300px;
   }
 
+  .team-container .team-item p {
+    max-width: 300px;
+  }
+
   .pros-content {
     width: 80%;
   }
@@ -32,7 +43,6 @@
 
 @media screen and (max-width: 1400px) {
   .hero-text {
-    margin-right: 8rem;
     width: 450px;
   }
 
@@ -46,10 +56,6 @@
   .erp-section .title,
   .pwr-platform-section .title {
     font-size: 55px;
-  }
-
-  .products-hero-content {
-    width: 80%;
   }
 
   .hero-text,
@@ -84,11 +90,7 @@
   }
 
   .hero-image img {
-    width: 450px;
-  }
-
-  .hero-line {
-    bottom: -7rem;
+    width: 420px;
   }
 
   .hero-line img {
@@ -107,10 +109,6 @@
 
   .pwr-platform-bg-circle img {
     height: 900px;
-  }
-
-  .about-us-content {
-    width: 80%;
   }
 
   .about-us-section .paragraph-container:first-child {
@@ -140,10 +138,6 @@
 
   .products-services-content .services-item p {
     width: 350px;
-  }
-
-  .focus-content {
-    width: 80%;
   }
 
   .focus-content .focus-item:last-child {
@@ -176,7 +170,6 @@
   }
 
   .hero-text {
-    margin-right: 2rem;
     width: 350px;
   }
 
@@ -267,7 +260,7 @@
   }
 
   .hero-line img {
-    width: 300px;
+    width: 350px;
   }
 
   .about-us-section .first-paragraph-container {
