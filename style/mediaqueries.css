@@ -1,5 +1,11 @@
 /* >>> CUSTOM QUERIES <<< */
 
+@media screen and (max-width: 1900px) {
+  .products-services-content {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .about-us-section .paragraph-container:first-child {
     margin-right: 200px;
@@ -17,6 +23,10 @@
 
   .team-container .team-item img {
     width: 300px;
+  }
+
+  .pros-content {
+    width: 80%;
   }
 }
 
@@ -36,6 +46,10 @@
   .erp-section .title,
   .pwr-platform-section .title {
     font-size: 55px;
+  }
+
+  .products-hero-content {
+    width: 80%;
   }
 
   .hero-text,
@@ -114,6 +128,35 @@
   .input-style {
     width: 170px;
   }
+
+  .products-title-content img {
+    width: 700px;
+  }
+
+  .products-services-content .services-item h2 {
+    font-size: 26px;
+    width: 350px;
+  }
+
+  .products-services-content .services-item p {
+    width: 350px;
+  }
+
+  .focus-content {
+    width: 80%;
+  }
+
+  .focus-content .focus-item:last-child {
+    margin-left: 50px;
+  }
+
+  .pros-item:first-child {
+    margin-right: 150px;
+  }
+
+  .pros-item p {
+    font-size: 20px;
+  }
 }
 
 /* >>> SMALL LAPTOP SCREEN SIZE: 1024px <<< */
@@ -187,7 +230,8 @@
   .about-us-section .paragraph-container p,
   .about-us-section .second-paragraph-container p,
   .contact-info-container .contact-container span,
-  .contact-info-container .contact-nav a {
+  .contact-info-container .contact-nav a,
+  .focus-content .focus-item p {
     font-size: 14px;
   }
 
@@ -275,6 +319,27 @@
   .map-section .form-container textarea {
     width: 200px !important;
   }
+
+  .products-services-content .services-item h2 {
+    font-size: 22px;
+    width: 250px;
+  }
+
+  .products-services-content .services-item p {
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .pros-row {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pros-item:first-child {
+    margin-right: 0;
+    margin-bottom: 70px;
+  }
 }
 
 /* >>> TABLET SCREEN SIZE: 769px <<< */
@@ -307,6 +372,10 @@
   .copyright-container,
   .partners-section,
   .map-section,
+  .products-title-section,
+  .products-services-section,
+  .focus-section,
+  .pros-section,
   .divider {
     display: none;
   }
