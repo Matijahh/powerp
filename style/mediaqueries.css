@@ -4,10 +4,13 @@
   .products-services-content,
   .hero-section .hero-content,
   .pwr-platform-section .pwr-platform-content,
+  .custom-solutions-section .custom-solutions-content,
+  .custom-hero-section .custom-hero-content,
   .about-us-section .about-us-content,
   .products-title-section .products-title-content,
   .products-hero-section .products-hero-content,
   .focus-section .focus-content,
+  .powerpack-section .powerpack-content,
   .pros-section .pros-content {
     width: 80%;
   }
@@ -39,6 +42,11 @@
   .pros-content {
     width: 80%;
   }
+
+  .powerpack-content {
+    gap: 200px;
+    row-gap: 70px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -54,13 +62,15 @@
   .products-hero-text .title,
   .custom-hero-text .title,
   .erp-section .title,
-  .pwr-platform-section .title {
+  .pwr-platform-section .title,
+  .custom-solutions-section .title {
     font-size: 55px;
   }
 
   .hero-text,
   .erp-info p,
-  .pwr-platform-info p {
+  .pwr-platform-info p,
+  .custom-solutions-info p {
     max-width: 450px;
   }
 
@@ -107,6 +117,10 @@
     margin-left: 150px;
   }
 
+  .custom-solutions-image img {
+    width: 450px;
+  }
+
   .pwr-platform-bg-circle img {
     height: 900px;
   }
@@ -150,6 +164,10 @@
 
   .pros-item p {
     font-size: 20px;
+  }
+
+  .custom-title-content h2 {
+    font-size: 28px;
   }
 }
 
@@ -202,7 +220,8 @@
   .products-hero-text .title,
   .custom-hero-text .title,
   .erp-info .title,
-  .pwr-platform-info .title {
+  .pwr-platform-info .title,
+  .custom-solutions-info .title {
     font-size: 35px;
   }
 
@@ -211,9 +230,14 @@
   .custom-hero-text p,
   .custom-hero-section .text-right p,
   .erp-info p,
-  .pwr-platform-info p {
+  .pwr-platform-info p,
+  .custom-solutions-info p {
     font-size: 14px;
     max-width: 350px;
+  }
+
+  .custom-solutions-info p {
+    margin-right: 50px;
   }
 
   .about-us-info {
@@ -253,6 +277,10 @@
   .pwr-platform-image img {
     width: 300px;
     margin-left: 100px;
+  }
+
+  .custom-solutions-image img {
+    width: 350px;
   }
 
   .pwr-platform-bg-circle img {
@@ -333,6 +361,14 @@
     margin-right: 0;
     margin-bottom: 70px;
   }
+
+  .custom-title-content h2 {
+    font-size: 24px;
+  }
+
+  .powerpack-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* >>> TABLET SCREEN SIZE: 769px <<< */
@@ -359,6 +395,7 @@
   .custom-hero-section,
   .erp-section,
   .pwr-platform-section,
+  .custom-solutions-section,
   .about-us-section,
   .team-section,
   .contact-info-container,
@@ -369,6 +406,8 @@
   .products-services-section,
   .focus-section,
   .pros-section,
+  .powerpack-section,
+  .custom-title-section,
   .divider {
     display: none;
   }
