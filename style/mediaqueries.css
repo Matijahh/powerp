@@ -11,8 +11,15 @@
   .products-hero-section .products-hero-content,
   .focus-section .focus-content,
   .powerpack-section .powerpack-content,
+  .references-section .references-content,
   .pros-section .pros-content {
     width: 80%;
+  }
+
+  .references-content .logos-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    row-gap: 120px;
   }
 }
 
@@ -47,6 +54,20 @@
     gap: 200px;
     row-gap: 70px;
   }
+
+  .references-section .title {
+    margin-left: 100px;
+  }
+
+  .references-content .logos-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    row-gap: 80px;
+  }
+
+  .references-content .logos-container .logo-image img {
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -63,7 +84,8 @@
   .custom-hero-text .title,
   .erp-section .title,
   .pwr-platform-section .title,
-  .custom-solutions-section .title {
+  .custom-solutions-section .title,
+  .references-section .title {
     font-size: 55px;
   }
 
@@ -168,6 +190,20 @@
 
   .custom-title-content h2 {
     font-size: 28px;
+  }
+
+  .references-section .title {
+    margin-left: 0;
+  }
+
+  .references-content .logos-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    row-gap: 120px;
+  }
+
+  .references-content .logos-container .logo-image img {
+    height: 90px;
   }
 }
 
@@ -369,6 +405,10 @@
   .powerpack-content {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .references-content .logos-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* >>> TABLET SCREEN SIZE: 769px <<< */
@@ -408,6 +448,7 @@
   .pros-section,
   .powerpack-section,
   .custom-title-section,
+  .references-section,
   .divider {
     display: none;
   }

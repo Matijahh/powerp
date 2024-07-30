@@ -1,0 +1,44 @@
+/* >>> References Section Styling <<< */
+
+.references-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 248px 0 120px;
+}
+
+.references-section .title {
+  margin-bottom: 100px;
+  margin-left: 200px;
+  max-width: 500px;
+}
+
+.references-section .title span {
+  color: var(--primary-color);
+  font-family: "PageFontExtraBold";
+}
+
+.references-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.references-content .logos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  row-gap: 120px;
+}
+
+.references-content .logos-container .logo-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.references-content .logos-container .logo-image img {
+  height: 80px;
+}
