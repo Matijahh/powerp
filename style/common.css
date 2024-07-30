@@ -14,14 +14,10 @@
   --text-color: #717171;
   --section-dark-bg-color: #1a1a1a;
   --copyright-bg-color: #161d21;
+  --slider-track-color: #bebebe;
 }
 
 /* >> Custom Fonts << */
-
-@font-face {
-  font-family: "NavbarFont";
-  src: url("../assets/fonts/avenir.ttf");
-}
 
 @font-face {
   font-family: "PageFontExtraBold";
@@ -102,7 +98,7 @@ nav {
   align-items: center;
   position: fixed;
   z-index: 5;
-  font-family: "NavbarFont";
+  font-family: "PageFont";
   width: 100%;
   background-color: var(--nav-bg-color);
 }
@@ -320,7 +316,9 @@ nav {
   border-radius: 5px;
   background-color: var(--btn-bg-color);
   border: none;
-  color: #ffffff;
+  text-decoration: none;
+  color: white;
+  font-family: "PageFont";
   padding: 15px 30px;
   font-size: 16px;
   cursor: pointer;

@@ -85,8 +85,17 @@
     <!-- Services Section -->
     <section class="products-services-section">
       <div class="products-services-content">
-        <img src="./assets/images/slider.png" alt="Slider" />
-        <div class="services-item">
+        <!-- <img src="./assets/images/slider.png" alt="Slider" /> -->
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="50"
+          value="0"
+          id="slider"
+          oninput="scrollServices(this.value)"
+        />
+        <div class="services-item" id="service1">
           <h2>Konsultantske <span>usluge</span></h2>
           <p>
             Zahvaljujući konsultantskom timu, korisnicima je omogućeno da
@@ -94,7 +103,7 @@
             optimizaciju korišćenjem znanja i iskustva našeg tima.
           </p>
         </div>
-        <div class="services-item">
+        <div class="services-item blur" id="service2">
           <p>
             Zahvaljujući osnovnim vrednostima kompanije, obezbedili smo
             korišćenje najsavremenijih dostupnih proizvoda i alata kako bi
@@ -102,7 +111,7 @@
           </p>
           <h2>Usluge instalacije i integracije <span>ERP sistema</span></h2>
         </div>
-        <div class="services-item">
+        <div class="services-item blur" id="service3">
           <h2><span>Podrška</span></h2>
           <p>
             Korisnicima kojima je potrebna napredna podrška za kritične servise
@@ -334,5 +343,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

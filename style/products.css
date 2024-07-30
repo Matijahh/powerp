@@ -121,6 +121,7 @@
   justify-content: center;
   align-items: center;
   padding: 160px 0 80px;
+  position: relative;
 }
 
 .products-services-content {
@@ -129,18 +130,87 @@
   flex-direction: column;
   align-items: center;
   width: 60%;
+  height: 100%;
 }
 
-.products-services-content img {
+/* .products-services-content img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+} */
+
+.products-services-content input[type="range"] {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: rotate(90deg);
+  -webkit-appearance: none;
+  width: 500px;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  background: var(--slider-track-color);
+}
+
+.products-services-content input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.products-services-content input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: none;
+  overflow: visible;
+  transition: 0.2s ease-in-out;
+}
+
+.products-services-content input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(0, 169, 189, 0.1);
+}
+.products-services-content input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(0, 169, 189, 0.2);
+}
+.products-services-content input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(0, 169, 189, 0.2);
+}
+
+.products-services-content input[type="range"]:-moz-range-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(0, 169, 189, 0.1);
+}
+.products-services-content input[type="range"]:active::-moz-range-thumb {
+  box-shadow: 0 0 0 13px rgba(0, 169, 189, 0.2);
+}
+.products-services-content input[type="range"]:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 13px rgba(0, 169, 189, 0.2);
 }
 
 .products-services-content .services-item {
   display: flex;
   justify-content: space-between;
+}
+
+.products-services-content .services-item.blur h2,
+.products-services-content .services-item.blur p,
+.products-services-content .services-item.blur h2 span {
+  text-shadow: 0 0 12px black;
+  color: transparent;
+}
+
+.products-services-content .services-item.blur h2 span {
+  text-shadow: 0 0 12px var(--primary-color);
+  color: transparent;
 }
 
 .products-services-content .services-item {
