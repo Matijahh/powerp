@@ -17,7 +17,6 @@
   }
 
   .references-content .logos-container {
-    grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     row-gap: 120px;
   }
@@ -30,6 +29,20 @@
 
   .map-container img {
     width: 840px;
+  }
+
+  .references-section .title {
+    margin-left: 100px;
+  }
+
+  .references-content .logos-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    row-gap: 80px;
+  }
+
+  .references-content .logos-container .logo-image img {
+    height: 60px;
   }
 }
 
@@ -53,20 +66,6 @@
   .powerpack-content {
     gap: 200px;
     row-gap: 70px;
-  }
-
-  .references-section .title {
-    margin-left: 100px;
-  }
-
-  .references-content .logos-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    row-gap: 80px;
-  }
-
-  .references-content .logos-container .logo-image img {
-    height: 60px;
   }
 }
 
@@ -200,10 +199,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
     row-gap: 120px;
-  }
-
-  .references-content .logos-container .logo-image img {
-    height: 90px;
   }
 }
 

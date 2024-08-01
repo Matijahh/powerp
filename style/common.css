@@ -526,20 +526,6 @@ nav {
 
 .contact-info-container .contact-nav {
   margin-right: 60px;
-  list-style: none;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.contact-info-container .contact-nav li {
-  margin-bottom: 20px;
-}
-
-.contact-info-container .contact-nav li:last-child {
-  margin-bottom: 0;
-}
-
-.contact-info-container .contact-nav a {
-  text-decoration: none;
-  color: white;
+  width: 100px;
+  height: 100%;
 }
