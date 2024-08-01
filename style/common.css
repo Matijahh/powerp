@@ -6,6 +6,7 @@
   --nav-bg-color: #263238;
   --text-color-white: #eeeeee;
   --primary-color: #00a9bd;
+  --primary-color-accent: #00c2d8;
   --primary-hover-color: #0e8390;
   --body-color: #e3e3e3;
   --btn-bg-color: #ff7f5c;
@@ -154,7 +155,12 @@ nav {
 .hamburger-nav {
   display: none;
   height: 108px;
-  position: relative;
+  position: fixed;
+  background: transparent;
+}
+
+.hamburger-nav.open {
+  background: var(--primary-color);
 }
 
 .hamburger-menu {

@@ -448,3 +448,9 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .mobile-hero-section {
+    display: none;
+  }
+}
