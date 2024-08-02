@@ -336,13 +336,16 @@
 .mobile-paragraph-section {
   width: 100%;
   height: 166px;
-  background: url("/assets/images/mobile/section-bg.png");
-  background-size: cover;
-  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.mobile-paragraph-section img {
+  width: 100%;
+  height: 100%;
 }
 
 .mobile-paragraph-section p {
@@ -352,6 +355,10 @@
   font-family: "MobileFontBold";
   text-align: center;
   font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mobile-services-section {
