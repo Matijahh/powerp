@@ -450,7 +450,10 @@
 }
 
 @media screen and (min-width: 769px) {
-  .mobile-hero-section {
+  .mobile-hero-section,
+  .mobile-paragraph-section,
+  .mobile-services-section,
+  .mobile-about-us-section {
     display: none;
   }
 }

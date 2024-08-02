@@ -16,6 +16,7 @@
   --section-dark-bg-color: #1a1a1a;
   --copyright-bg-color: #161d21;
   --slider-track-color: #bebebe;
+  --mobile-text-color: #58595b;
 }
 
 /* >> Custom Fonts << */
@@ -33,6 +34,16 @@
 @font-face {
   font-family: "PageFont";
   src: url("../assets/fonts/inter-regular.otf");
+}
+
+@font-face {
+  font-family: "MobileFont";
+  src: url("../assets/fonts/manrope-regular.otf");
+}
+
+@font-face {
+  font-family: "MobileFontBold";
+  src: url("../assets/fonts/manrope-bold.otf");
 }
 
 * {
@@ -159,8 +170,10 @@ nav {
   background: transparent;
 }
 
-.hamburger-nav.open {
-  background: var(--primary-color);
+.hamburger-nav.open,
+.hamburger-nav.scrolled {
+  background: var(--primary-color) !important;
+  transition: background-color 200ms linear;
 }
 
 .hamburger-menu {
