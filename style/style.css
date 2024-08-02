@@ -271,6 +271,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .mobile-hero-section h1 {
@@ -417,9 +418,71 @@
   width: 100%;
 }
 
+.mobile-about-us-section .paragraph-1 .vectors {
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.mobile-about-us-section .paragraph-2 .vectors {
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.mobile-hero-section .vectors {
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.mobile-about-us-section .paragraph-2 .vectors img {
+  width: 53px;
+  height: 100%;
+  margin-right: 50px;
+}
+
+.mobile-about-us-section .paragraph-1 .vectors img:first-child {
+  width: 53px;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.mobile-about-us-section .paragraph-1 .vectors img:last-child {
+  width: 85px;
+  height: 100%;
+  margin-right: 50px;
+}
+
+.mobile-hero-section .vectors img:first-child {
+  width: 85px;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.mobile-hero-section .vectors img:last-child {
+  width: 53px;
+  height: 100%;
+  margin-right: 50px;
+}
+
 .mobile-about-us-section .paragraph {
   width: 100%;
-  padding: 45px 0;
+  padding: 70px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,13 +498,169 @@
 }
 
 .mobile-about-us-section .paragraph-1 {
+  position: relative;
   background-color: var(--primary-color);
 }
 
 .mobile-about-us-section .paragraph-2 {
+  position: relative;
   background-color: var(--mobile-text-color);
 }
 
 .mobile-about-us-section .paragraph-3 {
   background-color: var(--text-color);
+}
+
+.mobile-partners-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 45px 0 85px;
+}
+
+.mobile-partners-section h2 {
+  font-size: 26px;
+  font-family: "MobileFontBold";
+  margin-bottom: 60px;
+  color: white;
+}
+
+.mobile-partners-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.mobile-partners-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), var(--primary-color));
+}
+
+.mobile-partners-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
+}
+
+.mobile-partners-container:hover .mobile-partners-slide {
+  animation-play-state: paused;
+}
+
+.mobile-partners-slide {
+  display: inline-block;
+  animation: 45s slide infinite linear;
+}
+
+.mobile-partners-slide img {
+  height: 50px;
+  margin: 0 50px;
+}
+
+.mobile-map-section {
+  width: 100%;
+  height: 500px;
+}
+
+.mobile-map-section img {
+  width: 100%;
+  height: 500px;
+}
+
+.mobile-footer-section {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mobile-text-color);
+  padding-top: 80px;
+}
+
+.mobile-footer-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-form-container {
+  margin-bottom: 80px;
+}
+
+.mobile-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mobile-form-container form .input-style {
+  color: white;
+  border-color: white;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: "MobileFont";
+}
+
+.mobile-form-container form .input-style::placeholder {
+  color: var(--disabled-text-color);
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.mobile-form-container form .btn {
+  margin-top: 50px;
+  padding: 10px 30px;
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.mobile-footer-logo {
+  height: 50px;
+  margin-bottom: 60px;
+}
+
+.mobile-footer-section p {
+  color: var(--disabled-text-color);
+  font-size: 14px;
+  font-family: "MobileFont";
+  font-style: italic;
+}
+
+.mobile-footer-section p.address {
+  font-style: initial;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.mobile-footer-copyright {
+  background-color: var(--copyright-mobile-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  color: white;
+  font-family: "MobileFont";
+  width: 100%;
+  font-size: 12px;
 }

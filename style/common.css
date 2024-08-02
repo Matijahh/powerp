@@ -15,7 +15,9 @@
   --text-color: #717171;
   --section-dark-bg-color: #1a1a1a;
   --copyright-bg-color: #161d21;
+  --copyright-mobile-bg-color: #3c444c;
   --slider-track-color: #bebebe;
+  --disabled-text-color: #d4d4d4;
   --mobile-text-color: #58595b;
 }
 

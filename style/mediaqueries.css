@@ -453,7 +453,9 @@
   .mobile-hero-section,
   .mobile-paragraph-section,
   .mobile-services-section,
-  .mobile-about-us-section {
+  .mobile-about-us-section,
+  .mobile-partners-section,
+  .mobile-map-section {
     display: none;
   }
 }
