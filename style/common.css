@@ -19,6 +19,7 @@
   --slider-track-color: #bebebe;
   --disabled-text-color: #d4d4d4;
   --mobile-text-color: #58595b;
+  --nav-address-color: #cbcfd4;
 }
 
 /* >> Custom Fonts << */
@@ -51,6 +52,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -172,9 +174,21 @@ nav {
   background: transparent;
 }
 
-.hamburger-nav.open,
-.hamburger-nav.scrolled {
+.hamburger-nav.open {
   background: var(--primary-color) !important;
+  box-shadow: none;
+  transition: background-color 200ms linear;
+}
+
+.hamburger-nav-colored {
+  background: var(--primary-color) !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 200ms linear;
+}
+
+.hamburger-nav-transparent {
+  background: transparent;
+  box-shadow: none;
   transition: background-color 200ms linear;
 }
 
@@ -310,6 +324,30 @@ nav {
 
 .hamburger-menu .menu-links.open {
   max-height: calc(100vh - 108px);
+}
+
+.hamburger-menu-footer {
+  background-color: var(--copyright-mobile-bg-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.hamburger-menu-footer p {
+  color: var(--nav-address-color);
+  font-family: "MobileFont";
+  font-size: 14px;
+}
+
+.hamburger-menu-footer .phone-number {
+  margin-top: 20px;
 }
 
 /* >>> Divider Styling <<< */
@@ -549,4 +587,39 @@ nav {
   margin-right: 60px;
   width: 100px;
   height: 100%;
+}
+
+/* >>> Go to Desktop Page Styling <<< */
+
+.go-to-desktop-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.go-to-desktop-section h1 {
+  font-family: "PageFontBold";
+  font-size: 28px;
+  text-align: center;
+  color: var(--section-title-color);
+}
+
+.go-to-desktop-section .go-to-desktop-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.go-to-desktop-section h1 span {
+  color: var(--primary-color);
+  font-family: "PageFontExtraBold";
+}
+
+.go-to-desktop-section img {
+  width: 350px;
+  margin-top: 100px;
 }

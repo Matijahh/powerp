@@ -85,13 +85,17 @@ sliderArea &&
     }
   });
 
-var hamburgerNav = document.querySelector(".hamburger-nav");
+var mobileNav = document.getElementById("mobile-nav");
 
-document.onscroll = () => {
+window.onscroll = function () {
   if (
-    document.body.scrollTop >= hamburgerNav.clientHeight ||
-    document.documentElement.scrollTop >= hamburgerNav.clientHeight
+    document.body.scrollTop >= 60 ||
+    document.documentElement.scrollTop >= 60
   ) {
-    hamburgerNav.classList.toggle("scrolled");
+    mobileNav.classList.add("hamburger-nav-colored");
+    mobileNav.classList.remove("hamburger-nav-transparent");
+  } else {
+    mobileNav.classList.add("hamburger-nav-transparent");
+    mobileNav.classList.remove("hamburger-nav-colored");
   }
 };

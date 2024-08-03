@@ -455,7 +455,9 @@
   .mobile-services-section,
   .mobile-about-us-section,
   .mobile-partners-section,
-  .mobile-map-section {
+  .mobile-map-section,
+  .mobile-footer-section,
+  .go-to-desktop-section {
     display: none;
   }
 }

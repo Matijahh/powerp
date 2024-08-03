@@ -27,7 +27,7 @@
       </div>
     </nav>
 
-    <nav class="hamburger-nav">
+    <nav class="hamburger-nav" id="mobile-nav">
       <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -45,11 +45,15 @@
             <img src="assets/images/logo.svg" alt="Logo" />
           </div>
           <li>
-            <a href="#" class="active" onclick="toggleMenu()">šta radimo</a>
+            <a href="#mobile-hero-section" class="active" onclick="toggleMenu()">šta radimo</a>
           </li>
-          <li><a href="#" onclick="toggleMenu()">o nama</a></li>
-          <li><a href="#" onclick="toggleMenu()">šta nudimo</a></li>
-          <li><a href="#" onclick="toggleMenu()">kontakt</a></li>
+          <li><a href="#mobile-about-us-section" onclick="toggleMenu()">o nama</a></li>
+          <li><a href="#mobile-services-section" onclick="toggleMenu()">šta nudimo</a></li>
+          <li><a href="#mobile-footer-section" onclick="toggleMenu()">kontakt</a></li>
+          <div class="hamburger-menu-footer">
+            <p class="address">Savski venac, Vojislava Vučkovića br.14</p>
+            <p class="phone-number">011 / 454 08 22</p>
+          </div>
         </div>
       </div>
     </nav>
@@ -329,7 +333,7 @@
     </footer>
 
     <!-- Mobile Version -->
-     <section class="mobile-hero-section">
+     <section class="mobile-hero-section" id="mobile-hero-section">
       <img class="bg-elements" src="assets/images/mobile/hero-bg-elements.png" alt="Background Elements" />
       <h1>PowerUP Your Business 
         with PowERP!</h1>
@@ -359,7 +363,7 @@
         da potpuno organizuju i sistematizuju svoje poslovno okruženje.</p>
      </section>
 
-     <section class="mobile-services-section">
+     <section class="mobile-services-section" id="mobile-services-section">
       <h2> Implementacijom informacionog sistema  (ERP sistem) integriše se:</h2>
       <div class="services">
         <div class="service-item">
@@ -378,7 +382,7 @@
       </div>
      </section>
 
-     <section class="mobile-about-us-section">
+     <section class="mobile-about-us-section" id="mobile-about-us-section">
       <h2>O nama</h2>
       <img src="assets/images/mobile/about-us-bg.png" alt="About Us" />
       <div class="paragraph paragraph-1">
@@ -442,7 +446,7 @@
         <a href="https://maps.app.goo.gl/hxrdSEuvY7iCzsEn7" target="_blank"><img src="./assets/images/mobile/mobile-map.png" alt="Map" /></a>
     </section>
 
-    <footer class="mobile-footer-section">
+    <footer class="mobile-footer-section" id="mobile-footer-section">
       <div class="mobile-footer-content">
         <div class="mobile-form-container">
           <form action="https://formsubmit.co/af4850bc16fc0e2a9317a578badf3f67" method="POST">
