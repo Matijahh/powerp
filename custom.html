@@ -15,14 +15,16 @@
       <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
       <div class="links">
         <ul class="nav-links">
-          <li><a href="index.html">početna</a></li>
-          <li><a href="products.html">proizvodi/usluge</a></li>
-          <li><a href="#" class="active">custom rešenja</a></li>
-          <li><a href="clients.html">reference</a></li>
+          <li><a href="index.html" id="nav-text-1">početna</a></li>
+          <li><a href="products.html" id="nav-text-2">proizvodi/usluge</a></li>
+          <li><a href="#" class="active" id="nav-text-3">custom rešenja</a></li>
+          <li><a href="clients.html" id="nav-text-4">reference</a></li>
         </ul>
         <ul class="language-links">
-          <li><a href="#" class="active">sr</a></li>
-          <li><a href="#">en</a></li>
+          <li>
+            <a class="active language-link-sr" onclick="switchLang('sr')">sr</a>
+          </li>
+          <li><a class="language-link-en" onclick="switchLang('en')">en</a></li>
         </ul>
       </div>
     </nav>
@@ -31,8 +33,10 @@
     <section class="custom-hero-section">
       <div class="custom-hero-content">
         <div class="custom-hero-text">
-          <h2 class="title">Power<span> Platforma</span></h2>
-          <p>
+          <h2 id="custom-hero-title" class="title">
+            Power<span> Platforma</span>
+          </h2>
+          <p id="custom-hero-text-1">
             Softverska rešenja i aplikacije razvijenih pomoću Microsoft Power
             Apps platforme. Zahvaljujući dugogodišnjem iskustvu, radu i
             konstantnim stručnim usavršavanjem u mogućnosti smo da ponudimo
@@ -41,7 +45,7 @@
           </p>
         </div>
         <div class="text-right">
-          <p>
+          <p id="custom-hero-text-2">
             Svaka aplikacija je pažljivo dizajnirana kako bi omogućila
             intuitivno korisničko iskustvo, maksimalnu efikasnost, minimalno
             opterećenje postojećih procesa i infrastrukturnog okruženja a pri
@@ -58,7 +62,7 @@
     <!-- Title Section -->
     <section class="custom-title-section">
       <div class="custom-title-content">
-        <h2>
+        <h2 id="custom-title">
           Zahvaljujući postojećim korisnicima kao i konstantnom usavršavanju
           datih rešenja izdvajamo neke od prednosti korišćenja istih:
         </h2>
@@ -70,8 +74,10 @@
     <div class="custom-solutions-section">
       <div class="custom-solutions-content">
         <div class="custom-solutions-info">
-          <h2 class="title">Custom <span>rešenja</span></h2>
-          <p>
+          <h2 class="title" id="custom-solutions-title">
+            Custom <span>rešenja</span>
+          </h2>
+          <p id="custom-solutions-text">
             U skladu sa potrebama tržišta istakli bi da je naša kompanija kao
             adekvatan odgovor napravila ekspertizu u razvoju sofisticiranih
             softverskih rešenja i aplikacija putem Microsoft Power Apps
@@ -97,7 +103,7 @@
     <!-- Title Section -->
     <section class="custom-title-section second-custom-title-section">
       <div class="custom-title-content">
-        <h2>
+        <h2 id="custom-title-text">
           Izdvojili bi PowerPack Docs kao najzastupljenije rešenje koje smo
           razvili a koje je u osnovi Document Management System (DMS) sa
           pratećim modulima:
@@ -110,27 +116,29 @@
       <div class="powerpack-content">
         <div class="powerpack-item">
           <img src="assets/images/powerpack-icon-1.svg" alt="Icon 1" />
-          <h4>Službena putovanja</h4>
+          <h4 id="powerpack-text-1">Službena putovanja</h4>
         </div>
         <div class="powerpack-item">
           <img src="assets/images/powerpack-icon-2.svg" alt="Icon 2" />
-          <h4>Arhivska knjiga</h4>
+          <h4 id="powerpack-text-2">Arhivska knjiga</h4>
         </div>
         <div class="powerpack-item">
           <img src="assets/images/powerpack-icon-3.svg" alt="Icon 3" />
-          <h4>Delovodna knjiga</h4>
+          <h4 id="powerpack-text-3">Delovodna knjiga</h4>
         </div>
         <div class="powerpack-item">
           <img src="assets/images/powerpack-icon-4.svg" alt="Icon 4" />
-          <h4>Knjiga pošte</h4>
+          <h4 id="powerpack-text-4">Knjiga pošte</h4>
         </div>
         <div class="powerpack-item">
           <img src="assets/images/powerpack-icon-5.svg" alt="Icon 5" />
-          <h4>E-tok <br />(Odobravanje dokumenata)</h4>
+          <h4 id="powerpack-text-5">E-tok <br />(Odobravanje dokumenata)</h4>
         </div>
         <div class="powerpack-item">
           <img src="assets/images/powerpack-icon-6.svg" alt="Icon 6" />
-          <h4>SEF (Integracija sa Sistemom Elektronskih Faktura)</h4>
+          <h4 id="powerpack-text-6">
+            SEF (Integracija sa Sistemom Elektronskih Faktura)
+          </h4>
         </div>
       </div>
     </section>
@@ -175,5 +183,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="languages.js"></script>
   </body>
 </html>

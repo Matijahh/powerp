@@ -15,14 +15,16 @@
       <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
       <div class="links">
         <ul class="nav-links">
-          <li><a href="index.html">početna</a></li>
-          <li><a href="products.html">proizvodi/usluge</a></li>
-          <li><a href="custom.html">custom rešenja</a></li>
-          <li><a href="#" class="active">reference</a></li>
+          <li><a href="index.html" id="nav-text-1">početna</a></li>
+          <li><a href="products.html" id="nav-text-2">proizvodi/usluge</a></li>
+          <li><a href="custom.html" id="nav-text-3">custom rešenja</a></li>
+          <li><a href="#" class="active" id="nav-text-4">reference</a></li>
         </ul>
         <ul class="language-links">
-          <li><a href="#" class="active">sr</a></li>
-          <li><a href="#">en</a></li>
+          <li>
+            <a class="active language-link-sr" onclick="switchLang('sr')">sr</a>
+          </li>
+          <li><a class="language-link-en" onclick="switchLang('en')">en</a></li>
         </ul>
       </div>
     </nav>
@@ -30,7 +32,9 @@
     <!-- References Section -->
     <section class="references-section">
       <div class="references-content">
-        <h2 class="title"><span>Referentna lista</span> naših partnera</h2>
+        <h2 class="title" id="references-title">
+          <span>Referentna lista</span> naših partnera
+        </h2>
         <div class="logos-container">
           <div class="logo-image">
             <img src="assets/images/clients/partner-1.png" alt="Partner-1" />
@@ -115,5 +119,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="languages.js"></script>
   </body>
 </html>

@@ -138,6 +138,7 @@ nav {
   color: var(--text-color-white);
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-links a:after,

@@ -15,14 +15,18 @@
       <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
       <div class="links">
         <ul class="nav-links">
-          <li><a href="index.html">početna</a></li>
-          <li><a href="#" class="active">proizvodi/usluge</a></li>
-          <li><a href="custom.html">custom rešenja</a></li>
-          <li><a href="clients.html">reference</a></li>
+          <li><a href="index.html" id="nav-text-1">početna</a></li>
+          <li>
+            <a href="#" class="active" id="nav-text-2">proizvodi/usluge</a>
+          </li>
+          <li><a href="custom.html" id="nav-text-3">custom rešenja</a></li>
+          <li><a href="clients.html" id="nav-text-4">reference</a></li>
         </ul>
         <ul class="language-links">
-          <li><a href="#" class="active">sr</a></li>
-          <li><a href="#">en</a></li>
+          <li>
+            <a class="active language-link-sr" onclick="switchLang('sr')">sr</a>
+          </li>
+          <li><a class="language-link-en" onclick="switchLang('en')">en</a></li>
         </ul>
       </div>
     </nav>
@@ -31,8 +35,10 @@
     <section class="products-hero-section">
       <div class="products-hero-content">
         <div class="products-hero-text">
-          <h2 class="title">Proizvodi / <span>Usluge</span></h2>
-          <p>
+          <h2 id="products-hero-title" class="title">
+            Proizvodi / <span>Usluge</span>
+          </h2>
+          <p id="products-hero-text">
             Naša kompanija se ističe po tome da svojim partnerima može uraditi
             neophodne analize poslovanja i poslovnih procesa, kao i samu
             implementaciju Microsoft Business Central ERP rešenja. Takodje smo u
@@ -51,7 +57,9 @@
     <!-- Title Section -->
     <section class="products-title-section">
       <div class="products-title-content">
-        <h2>Naš pristup intergrisanim <span>uslugama uključuje</span></h2>
+        <h2 id="products-title-text">
+          Naš pristup intergrisanim <span>uslugama uključuje</span>
+        </h2>
         <img src="./assets/images/pwr-platform-bg.png" alt="Circles" />
       </div>
     </section>
@@ -106,7 +114,7 @@
       <div class="focus-content">
         <div class="focus-item">
           <img src="assets/images/ripple-elipse.png" alt="Ripple Circle" />
-          <p>
+          <p id="focus-text-1">
             Zahvaljujući partnerskom odnosu sa Microsoftom našim korisnicima
             možemo obezbediti kompletnu lokalizaciju Microsoft Business
             Centrala, kako za OnPrem verzije tako i za CloudBased verzije.
@@ -114,7 +122,7 @@
         </div>
         <div class="focus-item">
           <img src="assets/images/ripple-elipse.png" alt="Ripple Circle" />
-          <p>
+          <p id="focus-text-2">
             Naš fokus je na stvaranju vrednosti za naše korisnike kroz
             inovativna rešenja, prilagođena specifičnim zahtevima a podržana
             stručnim timom koji se posvećuje unapređenju poslovnih performansi i
@@ -128,7 +136,7 @@
     <!-- Title Section -->
     <section class="products-title-section second-title-section">
       <div class="products-title-content">
-        <h2>
+        <h2 id="products-title-text-2">
           Zahvaljujući povratnim informacijama korisnika i stalnom usavršavanju,
           ističemo neke od prednosti korišćenja naših rešenja
         </h2>
@@ -142,34 +150,40 @@
         <div class="pros-row">
           <div class="pros-item">
             <img src="assets/images/pros-icon-1.svg" alt="Pros Icon" />
-            <p>Poboljšanu efikasnost i automatizaciju procesa.</p>
+            <p id="pros-text-1">
+              Poboljšanu efikasnost i automatizaciju procesa.
+            </p>
           </div>
           <div class="pros-item">
             <img src="assets/images/pros-icon-2.svg" alt="Pros Icon" />
-            <p>Mogućnost integracije sa različitim ERP-ovima.</p>
+            <p id="pros-text-2">
+              Mogućnost integracije sa različitim ERP-ovima.
+            </p>
           </div>
         </div>
         <div class="pros-row">
           <div class="pros-item">
             <img src="assets/images/pros-icon-3.svg" alt="Pros Icon" />
-            <p>
+            <p id="pros-text-3">
               Bolju organizaciju podataka i optimizaciju upravljanja
               informacijama i dokumentima.
             </p>
           </div>
           <div class="pros-item">
             <img src="assets/images/pros-icon-4.svg" alt="Pros Icon" />
-            <p>Smanjenje grešaka i poboljšanje tačnosti podataka.</p>
+            <p id="pros-text-4">
+              Smanjenje grešaka i poboljšanje tačnosti podataka.
+            </p>
           </div>
         </div>
         <div class="pros-row">
           <div class="pros-item">
             <img src="assets/images/pros-icon-5.svg" alt="Pros Icon" />
-            <p>Mogućnost dobijanja različitih izveštaja.</p>
+            <p id="pros-text-5">Mogućnost dobijanja različitih izveštaja.</p>
           </div>
           <div class="pros-item">
             <img src="assets/images/pros-icon-6.svg" alt="Pros Icon" />
-            <p>
+            <p id="pros-text-6">
               Poboljšanu saradnju između timova i bolju koordinaciju projekata.
               Podizanje profitabilnosti.
             </p>
@@ -220,5 +234,6 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="languages.js"></script>
   </body>
 </html>

@@ -15,14 +15,14 @@
       <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
       <div class="links">
         <ul class="nav-links">
-          <li><a href="#" class="active">početna</a></li>
-          <li><a href="products.html">proizvodi/usluge</a></li>
-          <li><a href="custom.html">custom rešenja</a></li>
-          <li><a href="clients.html">reference</a></li>
+          <li><a href="#" class="active" id="nav-text-1">početna</a></li>
+          <li><a href="products.html" id="nav-text-2">proizvodi/usluge</a></li>
+          <li><a href="custom.html" id="nav-text-3">custom rešenja</a></li>
+          <li><a href="clients.html" id="nav-text-4">reference</a></li>
         </ul>
         <ul class="language-links">
-          <li><a href="#" class="active">sr</a></li>
-          <li><a href="#">en</a></li>
+          <li><a class="active language-link-sr" onclick="switchLang('sr')">sr</a></li>
+          <li><a class="language-link-en" onclick="switchLang('en')">en</a></li>
         </ul>
       </div>
     </nav>
@@ -38,18 +38,18 @@
         </div>
         <div class="menu-links">
           <ul class="language-links">
-            <li><a href="#" class="active">sr</a></li>
-            <li><a href="#">en</a></li>
+            <li><a class="mobile-link-sr active" onclick="switchLang('sr')">sr</a></li>
+            <li><a class="mobile-link-en" onclick="switchLang('en')">en</a></li>
           </ul>
           <div class="logo">
             <img src="assets/images/logo.svg" alt="Logo" />
           </div>
           <li>
-            <a href="#mobile-hero-section" class="active" onclick="toggleMenu()">šta radimo</a>
+            <a href="#mobile-hero-section" class="active" onclick="toggleMenu()" id="mobile-nav-text-1">šta radimo</a>
           </li>
-          <li><a href="#mobile-about-us-section" onclick="toggleMenu()">o nama</a></li>
-          <li><a href="#mobile-services-section" onclick="toggleMenu()">šta nudimo</a></li>
-          <li><a href="#mobile-footer-section" onclick="toggleMenu()">kontakt</a></li>
+          <li><a href="#mobile-about-us-section" onclick="toggleMenu()" id="mobile-nav-text-2">o nama</a></li>
+          <li><a href="#mobile-services-section" onclick="toggleMenu()" id="mobile-nav-text-3">šta nudimo</a></li>
+          <li><a href="#mobile-footer-section" onclick="toggleMenu()" id="mobile-nav-text-4">kontakt</a></li>
           <div class="hamburger-menu-footer">
             <p class="address">Savski venac, Vojislava Vučkovića br.14</p>
             <p class="phone-number">011 / 454 08 22</p>
@@ -63,7 +63,7 @@
       <div class="hero-content">
         <div class="hero-text">
           <h2 class="title">PowerUP Your Business with <span>PowERP</span></h2>
-          <p>
+          <p id="hero-text">
             Zahvaljujući našoj ekspertizi u implementaciji Microsoft ERP sistema
             i razvoju konkurentnih aplikacija, omogućavamo vam strateške
             prednosti u dinamičnom poslovnom okruženju.
@@ -88,7 +88,7 @@
         </div>
         <div class="erp-info">
           <h2 class="title">ERP</h2>
-          <p>
+          <p id="erp-text">
             Kompanija Powerp je sistem integrator i pruža sveobuhvatne usluge iz
             oblasti informacionih tehnologija, uključujući konsalting (analiza,
             planiranje, dizajn), implementaciju i prilagođavanje Microsoft ERP
@@ -100,7 +100,7 @@
             unapređenja u oblasti IT tehnologija. Navedena poslovna politika
             ujedno i čini osnovnu vrednost naše kompanije.
           </p>
-          <a class="btn" href="products.html">Saznaj više</a>
+          <a class="btn" href="products.html" id="erp-btn">Saznaj više</a>
         </div>
       </div>
     </section>
@@ -112,8 +112,8 @@
       </div>
       <div class="pwr-platform-content">
         <div class="pwr-platform-info">
-          <h2 class="title">Power <span>Platforma</span></h2>
-          <p>
+          <h2 class="title" id="pwr-title">Power <span>Platforma</span></h2>
+          <p id="pwr-text">
             Softverska rešenja i aplikacije razvijenih pomoću Microsoft Power
             Apps platforme. Zahvaljujući dugogodišnjem iskustvu, radu i
             konstantnim stručnim usavršavanjem u mogućnosti smo da ponudimo
@@ -129,7 +129,7 @@
             dodavanje novih funkcionalnosti i integraciju sa postojećim
             sistemima.
           </p>
-          <a class="btn" href="custom.html">Saznaj više</a>
+          <a class="btn" href="custom.html" id="pwr-btn">Saznaj više</a>
         </div>
         <div class="pwr-platform-image">
           <img
@@ -145,15 +145,15 @@
     <!-- About Us Section -->
     <section class="about-us-section">
       <div class="about-us-content">
-        <h2 class="title">O <span>Nama</span></h2>
-        <p class="about-us-info">
+        <h2 class="title" id="about-us-title">O <span>Nama</span></h2>
+        <p class="about-us-info" id="about-us-text-1">
           Kompanija Powerp je sistem integrator i pruža usluge iz oblasti
           informacionih tehnologija koje obuhvataju:
         </p>
         <div class="first-paragraph-container">
           <div class="paragraph-container">
             <img src="./assets/images/paragraph-square.png" alt="Square" />
-            <p>
+            <p id="about-us-text-2">
               Konsalting (analiza, planiranje, dizajn), implementacija i
               prilagođavanje ERP rešenja, razvijanje aplikacija i softverskih
               rešenja, servis i podršku u cilju rešavanja problema i nadogradnje
@@ -163,7 +163,7 @@
 
           <div class="paragraph-container">
             <img src="./assets/images/paragraph-circle.png" alt="Square" />
-            <p>
+            <p id="about-us-text-3">
               Znanje, dugogodišnje bogato iskustvo zaposlenih i kontinuirano
               učenje u oblasti IT tehnologija su osnovne vrednosti kompanije.
             </p>
@@ -171,7 +171,7 @@
         </div>
         <div class="second-paragraph-container">
           <img src="./assets/images/paragraph-image.png" alt="Square" />
-          <p>
+          <p id="about-us-text-4">
             Cilj naše kompanije je da pruži podršku, domensko znanje, usluge,
             rešenja i proizvode sa najsavremenijom tehnologijom, koja je
             jednostavna za korišćenje i da pri tom za korisnika bude najboljolje
@@ -192,7 +192,7 @@
     <!-- Team Section -->
      <section class="team-section">
       <div class="team-content">
-        <h2 class="title"><span>PowerP</span> Tim</h2>
+        <h2 class="title" id="team-title"><span>PowerP</span> Tim</h2>
         <div class="team-container">
           <div class="team-item">
             <img src="./assets/images/team/marina.png" alt="Marina" />
@@ -204,7 +204,7 @@
           </div>
           <div class="team-item">
             <img src="./assets/images/team/ana.png" alt="Ana" />
-            <p>Ana <span class="item-blue">/</span> <span class="item-gray">Team lead ERP Konsultanata</span></p>
+            <p>Ana <span class="item-blue">/</span> <span class="item-gray" id="position-text-1">Team lead ERP Konsultanata</span></p>
           </div>
           <div class="team-item">
             <img src="./assets/images/team/ljubisa.png" alt="Ljubisa" />
@@ -216,15 +216,15 @@
           </div>
           <div class="team-item">
             <img src="./assets/images/team/miloje.png" alt="Miloje" />
-            <p>Miloje <span class="item-blue">/</span> <span class="item-gray">Senior programer</span></p>
+            <p>Miloje <span class="item-blue">/</span> <span class="item-gray" id="position-text-2">Senior programer</span></p>
           </div>
           <div class="team-item">
             <img src="./assets/images/team/zoran.png" alt="Zoran" />
-            <p>Zoran <span class="item-blue">/</span> <span class="item-gray">Senior ERP Konsultant </span></p>
+            <p>Zoran <span class="item-blue">/</span> <span class="item-gray" id="position-text-3">Senior ERP Konsultant </span></p>
           </div>
           <div class="team-item">
             <img src="./assets/images/team/bojan.png" alt="Bojan" />
-            <p>Bojan <span class="item-blue">/</span> <span class="item-gray">Senior ERP Konsultant </span></p>
+            <p>Bojan <span class="item-blue">/</span> <span class="item-gray" id="position-text-4">Senior ERP Konsultant </span></p>
           </div>
           <div class="team-item">
             <img src="./assets/images/team/filip.png" alt="Filip" />
@@ -232,15 +232,15 @@
           </div>
           <div class="team-item">
             <img src="./assets/images/team/jovan.png" alt="Jovan" />
-            <p>Jovan <span class="item-blue">/</span> <span class="item-gray">Programer</span></p>
+            <p>Jovan <span class="item-blue">/</span> <span class="item-gray" id="position-text-5">Programer</span></p>
           </div>
           <div class="team-item">
             <img src="./assets/images/team/marko.png" alt="Marko" />
-            <p>Marko <span class="item-blue">/</span> <span class="item-gray">ERP Konsultant</span></p>
+            <p>Marko <span class="item-blue">/</span> <span class="item-gray" id="position-text-6">ERP Konsultant</span></p>
           </div>
           <div class="team-item">
             <img src="./assets/images/team/stefan.png" alt="Stefan" />
-            <p>Stefan <span class="item-blue">/</span> <span class="item-gray">ERP Konsultant</span></p>
+            <p>Stefan <span class="item-blue">/</span> <span class="item-gray" id="position-text-7">ERP Konsultant</span></p>
           </div>
         </div>
      </section>
@@ -248,7 +248,7 @@
      <!-- Partners Section -->
      <section class="partners-section">
       <div class="partners-content">
-        <h2 class="title"><span>Referentna lista</span> naših partnera</h2>
+        <h2 class="title" id="partners-title"><span>Referentna lista</span> naših partnera</h2>
         <div class="partners-container">
           <div class="partners-slide">
             <img src="./assets/images/clients/partner-1.png" alt="Partner 1" />
@@ -302,7 +302,7 @@
             <div class="third-row">
               <textarea name="message" placeholder="poruka" class="input-style"></textarea>
             </div>
-            <button class="btn" type="submit">Pošalji</button>
+            <button class="btn" type="submit" id="map-btn-text">Pošalji</button>
           </form>
         </div>
       </section>
@@ -344,7 +344,7 @@
           </div>
         </div>
        </div> 
-       <p>
+       <p id="mobile-hero-text">
           PowERP je kompanija koja pruža usluge implementacije i održavanja ERP sistema, 
           kao i izrade aplikacija u srodnom Power Platform okruženju. 
           <br/><br/><br/>
@@ -358,35 +358,34 @@
 
      <section class="mobile-paragraph-section">
       <img src="assets/images/mobile/section-bg.png" alt="Section Background Image"/>
-      <p>
+      <p id="mobile-p-text">
         PowERP nudi jedinstvena aplikativna rešenja koja će klijentima omogućiti 
         da potpuno organizuju i sistematizuju svoje poslovno okruženje.</p>
      </section>
 
      <section class="mobile-services-section" id="mobile-services-section">
-      <h2> Implementacijom informacionog sistema  (ERP sistem) integriše se:</h2>
+      <h2 id="mobile-services-title">Implementacijom informacionog sistema  (ERP sistem) integriše se:</h2>
       <div class="services">
         <div class="service-item">
           <img src="assets/images/mobile/service-1.svg" alt="Service 1" />
-          <p>Mogućnost praćenja i planiranja promena u svakodnevnom poslovanju</p>
+          <p id="mobile-services-text-1">Mogućnost praćenja i planiranja promena u svakodnevnom poslovanju</p>
         </div>
         <div class="service-item">
           <img src="assets/images/mobile/service-2.svg" alt="Service 2" />
-          <p>Kompletno funkcionisanje
-            poslovnih procesa</p>
+          <p id="mobile-services-text-2">Kompletno funkcionisanje poslovnih procesa</p>
         </div>
         <div class="service-item">
           <img src="assets/images/mobile/service-3.svg" alt="Service 3" />
-          <p>Sistemska povezanost sa svim svojim organizacionim jedinicama i zaposlenima</p>
+          <p id="mobile-services-text-3">Sistemska povezanost sa svim svojim organizacionim jedinicama i zaposlenima</p>
         </div>
       </div>
      </section>
 
      <section class="mobile-about-us-section" id="mobile-about-us-section">
-      <h2>O nama</h2>
+      <h2 id="mobile-about-us-title">O nama</h2>
       <img src="assets/images/mobile/about-us-bg.png" alt="About Us" />
       <div class="paragraph paragraph-1">
-        <p>Kao mali i kompaktan tim profesionalaca, mi smo tu da vas podržimo i razvijamo 
+        <p id="mobile-about-us-text-1">Kao mali i kompaktan tim profesionalaca, mi smo tu da vas podržimo i razvijamo 
           inovativna rešenja koje će olakšati i ubrzati dostizanje vaših poslovnih ciljeva.</p>
         <div class="vectors">
           <img src="assets/images/mobile/bg-vector-1.png" alt="Vector 1" />
@@ -394,20 +393,20 @@
         </div>
       </div>
       <div class="paragraph paragraph-2">
-        <p>PowERP tim je hrabar i kreativan kada je u pitanju pronalaženje fleksibilnog 
+        <p id="mobile-about-us-text-2">PowERP tim je hrabar i kreativan kada je u pitanju pronalaženje fleksibilnog 
           poslovnog modela i tu smo da se prilagodimo konkretnim potrebama vaše organizacije.</p>
         <div class="vectors">
           <img src="assets/images/mobile/bg-vector-1.png" alt="Vector 1" />
         </div>
       </div>
       <div class="paragraph paragraph-3">
-        <p>Naša misija je vrlo jednostavna, posvećeni smo pružanju usluga svojim klijentima 
+        <p id="mobile-about-us-text-3">Naša misija je vrlo jednostavna, posvećeni smo pružanju usluga svojim klijentima 
           kako bi uz naša rešenja ubrzali kompletno funkcionisanje poslovnih procesa.</p>
       </div>
      </section>
 
      <section class="mobile-partners-section">
-      <h2>Partneri</h2>
+      <h2 id="mobile-partners-title">Partneri</h2>
       <div class="mobile-partners-container">
         <div class="mobile-partners-slide">
           <img src="./assets/images/clients/partner-1.png" alt="Partner 1" />
@@ -455,7 +454,7 @@
             <input type="tel" name="phone" placeholder="telefon" class="input-style" />
             <input type="email" name="email" placeholder="email" class="input-style" />
             <textarea name="message" placeholder="poruka" class="input-style"></textarea>
-            <button class="btn" type="submit">Pošalji</button>
+            <button class="btn" type="submit" id="mobile-send-btn">Pošalji</button>
           </form>
         </div>
         <img class="mobile-footer-logo" src="assets/images/logo.svg" alt="Logo" />
@@ -468,5 +467,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="languages.js"></script>
   </body>
 </html>
