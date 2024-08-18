@@ -188,18 +188,6 @@
   box-shadow: 0 0 0 13px rgba(0, 169, 189, 0.2);
 }
 
-.products-services-content h2.service-item.blur,
-.products-services-content p.service-item.blur,
-.products-services-content h2.service-item.blur span {
-  text-shadow: 0 0 12px black;
-  color: transparent;
-}
-
-.products-services-content h2.service-item.blur span {
-  text-shadow: 0 0 12px var(--primary-color);
-  color: transparent;
-}
-
 .products-services-content .services-item {
   width: 100%;
 }
@@ -239,6 +227,22 @@
 .products-services-content .services-item p {
   font-size: 16px;
   width: 500px;
+}
+
+.products-services-content h2.service-item {
+  font-size: 35px;
+}
+
+.products-services-content p.service-item {
+  font-size: 20px;
+}
+
+.products-services-content h2.service-item.blur {
+  font-size: 30px;
+}
+
+.products-services-content p.service-item.blur {
+  font-size: 16px;
 }
 
 /* >>> Focus Section Styling <<< */
